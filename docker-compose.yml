@@ -20,7 +20,7 @@ services:
         build: ./php
         restart: always
         volumes:
-            - ../code:/var/www/html
+            - ./code:/var/www/html
             - ./conf/php/php.ini:/usr/local/etc/php/php.ini
         depends_on:
             - mysql
