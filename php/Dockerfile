@@ -2,7 +2,7 @@ FROM php:7.2-fpm
 
 #mirrors.163.com
 COPY ./sources.list.stretch /etc/apt/sources.list
-RUN rm /etc/apt/sources.list.d/buster.list
+# RUN rm /etc/apt/sources.list.d/buster.list
 
 #ext package
 RUN chmod -R 777 /tmp
