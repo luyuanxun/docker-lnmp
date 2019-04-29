@@ -1,8 +1,15 @@
 # docker-lnmp
 ## 一、docker-compose快速搭建lnmp
-* php-fpm-7.2(带swoole-4.1.0拓展，内含Dockerfile文件，需要什么拓展自行修改)
-* mysql 5.7
-* nginx
+* php:7.3.4（可修改php/Dockerfile使用不同版本及添加其它扩展）
+* nginx:1.15.12
+* mysql:5.7
+
+php与nginx用的是alpine镜像更小
+已安装“禅知”所需扩展
 
 ## 二、启动
-* docker-compose up 
+*  docker-compose up -d
+
+## 说明
+* 1、code目录存放代码
+* 2、conf存放php与nginx配置
